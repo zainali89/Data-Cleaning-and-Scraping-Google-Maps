@@ -1,0 +1,7 @@
+fig1 = px.scatter_3d(df, 
+                     x=org_all_in_one_df["rating"], 
+                     y = org_all_in_one_df["no_of_reviews"],
+                     z = org_all_in_one_df["label"],
+              color=org_all_in_one_df["rating"])
+fig1.write_html("5.html")
+fig1.show()
